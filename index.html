@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- fonts awesome -->
      <script src="https://kit.fontawesome.com/3212c52e0c.js" crossorigin="anonymous"></script>
+     <!-- favicon -->
+      <link rel="shortcut icon" href="/assets/products (1).png" type="image/x-icon">
     <!-- css linkup -->
      <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Nasal</title>
 </head>
 <body>
 
@@ -58,10 +60,10 @@
     <a href="#" class="shop-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 </section>
-<!-- Banner Section End -->
-</main>
 <!-- products section start -->
- <div class="product-container">
+
+<div class="product-container">
+  <!-- Left side: Image viewer -->
   <div>
     <div class="main-image">
       <img id="mainDisplay" src="/assets/products (1).png" alt="Main Image">
@@ -74,20 +76,48 @@
     </div>
   </div>
 
+  <!-- Right side: Product info -->
   <div class="product-details">
-    <h2>Noseclip</h2>
-    <div class="price">$12.00 <span class="old-price">$20.00</span></div>
-    <p>A nasal clip is a small device typically used to pinch or secure the nostrils...</p>
-    
+    <!-- Rating row -->
+    <div class="rating">
+      <img src="/assets/rating.png" alt="Star" />
+      <img src="/assets/rating.png" alt="Star" />
+      <img src="/assets/rating.png" alt="Star" />
+      <img src="/assets/rating.png" alt="Star" />
+     <div class="">
+         <strong>4.5</strong>
+      <span>(500+ Reviews)</span>
+     </div>
+    </div>
+
+    <!-- Title -->
+    <h2 class="product-title">Noseclip</h2>
+
+    <!-- Price section -->
+    <div class="price-section">
+      <span class="price">$12.00</span>
+      <span class="old-price">$20.00</span>
+      <span class="discount">SAVE 10%</span>
+    </div>
+
+    <!-- Description -->
+    <h3 class="description_title">Description:</h3>
+    <p class="description">
+      A nasal clip is a small device typically used to pinch or secure the nostrils for various purposes, such as during sports, medical treatments, or personal health practices. It is usually made of flexible or padded materials to ensure comfort and a secure fit. Common uses include:
+    </p>
+
+    <!-- Features list -->
     <ul class="features">
-      <li>✔ Boost performance</li>
-      <li>✔ Optimized Airflow</li>
-      <li>✔ Stop snoring</li>
-      <li>✔ 100% Drug Free</li>
+      <li><img src="/assets/product_icon.png" alt="Boost"> Boost performance</li>
+      <li><img src="/assets/product_icon.png" alt="Airflow"> Optimized Airflow</li>
+      <li><img src="/assets/product_icon.png" alt="Snore"> Stop snoring</li>
+      <li><img src="/assets/product_icon.png" alt="Drug Free"> 100% Drug Free</li>
     </ul>
 
+    <!-- Add to cart -->
     <button class="add-to-cart">Add to Cart →</button>
 
+    <!-- Payment icons -->
     <div class="payment-icons">
       <img src="/assets/Apple Pay.png" alt="Apple Pay">
       <img src="/assets/Google Pay.png" alt="Google Pay">
@@ -96,19 +126,63 @@
       <img src="/assets/Visa.png" alt="Visa">
     </div>
 
+    <!-- Accordion -->
     <div class="accordion">
-      <div class="accordion-header" onclick="toggleAccordion(this)">Sizing information</div>
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Sizing information <i class="fa fa-chevron-down"></i>
+      </div>
       <div class="accordion-content">Free resizing options available upon request.</div>
 
-      <div class="accordion-header" onclick="toggleAccordion(this)">Money-back guarantee</div>
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Free Resizing <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">We offer free resizing for all our products within 15 days.</div>
+
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Money-back guarantee & free returns <i class="fa fa-chevron-down"></i>
+      </div>
       <div class="accordion-content">Full refund available within 30 days of purchase.</div>
     </div>
   </div>
 </div>
+
 <!-- products section ends -->
+<!-- Banner Section End -->
+</main>
+
 <!-- main main end -->
 
+<!-- footer start -->
+ <footer>
+  <div class="footer-top">
+    <h2>Get in Touch</h2>
+    <p>
+      Our mission is to drive progress and enhance the lives of our customers by delivering superior products and services that exceed expectations.
+    </p>
+    <button class="order-btn">Order Now →</button>
+  </div>
 
+  <div class="footer-bottom">
+    <div class="copyright">
+      ©Copyright UnifiedUI.com. All rights reserved. 2024
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy & Policy</a>
+      <a href="#">Terms & Condition</a>
+      <a href="#">Home</a>
+      <a href="#">Resources</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="social-icons">
+      <a style="color: blue;" href="#"><img  src="/assets/discord.png" alt="Discord" /></a>
+      <a href="#"><img src="/assets/x.png" alt="X" /></a>
+      <a href="#"><img src="/assets/instra.png" alt="Instagram" /></a>
+      <a href="#"><img src="/assets/link.png" alt="LinkedIn" /></a>
+    </div>
+  </div>
+</footer>
+
+<!-- footer end -->
 
 
 
