@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fonts awesome -->
+     <script src="https://kit.fontawesome.com/3212c52e0c.js" crossorigin="anonymous"></script>
+    <!-- css linkup -->
+     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- main start -->
+<main>
+    <!-- header section star -->
+  <header class="navbar">
+    <div class="logo">logo</div>
+
+    <!-- Hamburger -->
+    <div id="hamburger" class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Nav Links -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#whyItWork">Why It Works</a></li>
+        <li><a href="#feature">Features</a></li>
+        <li><a href="#howItWorks">How It Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#beforeAndAfter">Before & After</a></li>
+        <li><a href="#science">Science</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#shopBundles">Shop Bundles</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="cta-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+  </header>
+<!-- header section end -->
+  <!-- Banner Section Start -->
+<section class="banner">
+  <div class="banner-content">
+    <div class="customers">
+      <img src="/assets/banner_badge (1).png" alt="customer">
+      <img src="/assets/banner_badge (2).png"" alt="customer">
+      <img src="/assets/banner_badge (3).png"" alt="customer">
+      <span>26k Happy Customers</span>
+    </div>
+    <h1>Breathe better,<br>live better!</h1>
+    <p>Discover how effortless breathing can enhance your life.<br>Take the first step Today!</p>
+    <a href="#" class="shop-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+<!-- Banner Section End -->
+</main>
+<!-- products section start -->
+ <div class="product-container">
+  <div>
+    <div class="main-image">
+      <img id="mainDisplay" src="/assets/products (1).png" alt="Main Image">
+    </div>
+    <div class="thumbnail-gallery">
+      <img src="/assets/products (4).png" class="thumbnail selected" onclick="changeImage(this)">
+      <img src="/assets/products (3).png" class="thumbnail" onclick="changeImage(this)">
+      <img src="/assets/products (4).png" class="thumbnail" onclick="changeImage(this)">
+      <img src="/assets/products (8).png" class="thumbnail" onclick="changeImage(this)">
+    </div>
+  </div>
+
+  <div class="product-details">
+    <h2>Noseclip</h2>
+    <div class="price">$12.00 <span class="old-price">$20.00</span></div>
+    <p>A nasal clip is a small device typically used to pinch or secure the nostrils...</p>
+    
+    <ul class="features">
+      <li>✔ Boost performance</li>
+      <li>✔ Optimized Airflow</li>
+      <li>✔ Stop snoring</li>
+      <li>✔ 100% Drug Free</li>
+    </ul>
+
+    <button class="add-to-cart">Add to Cart →</button>
+
+    <div class="payment-icons">
+      <img src="/assets/Apple Pay.png" alt="Apple Pay">
+      <img src="/assets/Google Pay.png" alt="Google Pay">
+      <img src="/assets/Mastercard.png" alt="MasterCard">
+      <img src="/assets/Shop.png" alt="Shopify">
+      <img src="/assets/Visa.png" alt="Visa">
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header" onclick="toggleAccordion(this)">Sizing information</div>
+      <div class="accordion-content">Free resizing options available upon request.</div>
+
+      <div class="accordion-header" onclick="toggleAccordion(this)">Money-back guarantee</div>
+      <div class="accordion-content">Full refund available within 30 days of purchase.</div>
+    </div>
+  </div>
+</div>
+<!-- products section ends -->
+<!-- main main end -->
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

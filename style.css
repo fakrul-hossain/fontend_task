@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: rgb(255, 102, 0);;
+
+}
+body {
+  background: #f0f0f0;
+}
+
+/* Navbar Base */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fff;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Nav Links */
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+.nav-links ul li a:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+}
+.cta-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-btn i {
+  margin-left: 8px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.hamburger i {
+  transition: all 0.3s ease;
+}
+
+/* hero section */
+.banner {
+    background: url('/assets/banner_img.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: white;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .banner-content {
+    /* max-width: 1220px;
+    margin: 0 auto; */
+    
+    /* padding: 0 20px; */
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+  }
+
+  .customers {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    margin-left: 10px;
+    /* margin-bottom: 20px; */
+  }
+
+  .customers img {
+    /* position: absolute; */
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+   
+  }
+
+  .customers span {
+    margin-left: -10px;
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .banner h1 {
+    margin-top: 70px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+   
+  }
+
+  .banner p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .shop-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+.shop-btn i {
+    font-size: 18px;
+    transition: all 0.3s ease;
+    transform: translate(0,0);
+
+}
+
+
+/* products section */
+   .product-container {
+      display: flex;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .main-image {
+      width: 300px;
+      height: 300px;
+      background: #ffece5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+    .main-image img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .thumbnail-gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .thumbnail.selected {
+      border-color: brown;
+    }
+    .product-details {
+      flex: 1;
+    }
+    .price {
+      color: #a44;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      margin-left: 10px;
+      font-size: 1em;
+    }
+    .features {
+      margin: 20px 0;
+    }
+    .features li {
+      margin-bottom: 10px;
+    }
+    .add-to-cart {
+      background: orange;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .accordion {
+      margin-top: 20px;
+    }
+    .accordion-header {
+      background: #eee;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .accordion-content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .payment-icons img {
+      height: 30px;
+      margin: 10px 10px 0 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- */
+/* Device-Specific Breakpoints */
+/* -------------------------- */
+
+/* Small Devices (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav-links,
+  .cta-btn {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px 0;
+  }
+
+  .nav-links.active ul {
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    padding: 0 40px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Medium Devices (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1.1rem;
+  }
+
+  .nav-links,
+  .cta-btn {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px 0;
+  }
+
+  .nav-links.active ul {
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    padding: 0 40px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Large Devices (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner h1 {
+    font-size: 2.7rem;
+  }
+
+  .banner p {
+    font-size: 1.15rem;
+  }
+
+  .nav-links,
+  .cta-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  .nav-links,
+  .cta-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
